@@ -1,0 +1,36 @@
+{
+  "$schemaVersion": "1.0",
+  "project": {
+    "name": "PCF Learning Framework",
+    "repositoryName": "pcf_learning_kk"
+  },
+  "controlDefaults": {
+    "namespace": "Kk.PcfLearning.Controls",
+    "framework": "react",
+    "language": "typescript"
+  },
+  "platformLibraries": {
+    "react": "16.14.0",
+    "fluent": "9.46.2"
+  },
+  "solution": {
+    "name": "PCFLab",
+    "projectPath": "solutions/PCFLab",
+    "publisher": {
+      "name": "Deloitte",
+      "prefix": "dlt"
+    },
+    "packageType": "Both",
+    "build": {
+      "defaultConfiguration": "Debug",
+      "expectedArtifactType": "Unmanaged"
+    }
+  },
+  "paths": {
+    "fieldControls": "controls/field",
+    "datasetControls": "controls/dataset",
+    "templates": "templates",
+    "scripts": "scripts",
+    "documentation": "docs"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "pcf-learning-framework",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A beginner-friendly framework for developing validated PCF controls for Power Platform model-driven apps.",
+  "scripts": {
+    "validate:config": "node scripts/validate-framework-config.mjs",
+    "validate:controls": "node scripts/validate-controls.mjs",
+    "validate:platform-libraries": "node scripts/validate-platform-libraries.mjs",
+    "validate": "npm run validate:platform-libraries && npm run validate:config && npm run validate:controls",
+    "build:solution": "dotnet build solutions/PCFLab/PCFLab.cdsproj",
+    "build:solution:release": "dotnet build solutions/PCFLab/PCFLab.cdsproj --configuration Release"
+  }
+}
